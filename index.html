@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>I love U</title>
+    <title>IloveU</title>
 
     <meta name="Generator" content="EditPlus" />
 
@@ -30,24 +30,39 @@
       .textqa {
         position: absolute;
         transform: translateY(-25%);
+        width: max-content;
+        height: max-content;
       }
       h1 {
         color: #fff;
         font-size: 60px;
         font-family: "Dancing Script", cursive;
         text-align: center;
-        animation: neon 5s infinite;
+        animation: typingeffect 2s ease;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 24px;
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%;
+        text-shadow: white 0 0 12px, #ff3aad 0 0 24px, #ff3aad 0 0 36px;
       }
-      @keyframes neon {
-        0%,
-        39%,
-        41%,
-        59%,
-        61%,
-        100% {
-          text-shadow: white 0 0 12px, #ff3aad 0 0 24px, #ff3aad 0 0 36px;
+      @keyframes typingeffect {
+        from {
+          width: 0;
+          padding-left: 0;
+          padding-right: 0;
         }
       }
+      /* @keyframes neon {
+      0%, 39%, 41%, 59%, 61%, 100% {
+        text-shadow: 
+        white 0 0 12px,
+        #ff3aad 0 0 24px,
+        #ff3aad 0 0 36px;
+      
+      }
+    } */
 
       canvas {
         position: absolute;
